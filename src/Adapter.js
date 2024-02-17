@@ -184,7 +184,7 @@ class Adapter {
   }
 
   static serializeUUID (uuid) {
-    return `dev_${uuid.replace(/:/g, '_')}`
+    return `dev_${uuid.replace(/:/g, '_').toUpperCase()}`
   }
 
   static deserializeUUID (uuid) {
